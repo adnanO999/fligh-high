@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../../images/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.signupbox{
+    width: 450;
+    height: 680;
+    background: #000;
+    color: #fff;
+    top: 53%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    opacity: 1;
+    border-radius: 25px;
+    padding: 70px 30px; /*fix it to the center*/
+}
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    opacity: 1;
+    left: calc(50% - 50px); /*placed at the center of the box*/
+}
+h1{ /*place the signup at the center*/
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.signupbox p{ /*username and password title*/
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.signupbox input{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.signupbox input[type="text"], input[type="password"], input[type="email"],input[name="username"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+.signupbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 30px;
+    background: rgb(255, 123, 0);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.signupbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffffff;
+    color: #000; 
+}
+
+
+
+
+

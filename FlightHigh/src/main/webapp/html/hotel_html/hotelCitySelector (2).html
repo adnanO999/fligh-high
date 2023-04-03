@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="../../css/hotel_css/citySelector.css">
+<title>City Selector</title>
+</head>
+<body>
+<form action="../../listingHotels.jsp" method="post">
+<div class="dropdown">
+<input type="text" class="text02" name="cityHotel" readonly placeholder="Select City">
+<div class="option">
+
+	<div onmouseover="show('Beirut')">Beirut</div>
+	<div onmouseover="show('Madrid')">Madrid</div>
+	<div onmouseover="show('New York')">New York</div>
+	<div onmouseover="show('Paris')">Paris</div>
+	<div onmouseover="show('Rome')">Rome</div>
+	<div onmouseover="show('Tokyo')">Tokyo</div>
+	<div onmouseover="show('Toulouses')">Toulouses</div>
+	
+</div>
+</div>
+
+	
+
+
+        <div class="ok">
+            <button type="submit" class="button">Search</button>
+        </div>
+        </form>
+        
+<script>
+	
+	function show(a){
+		document.querySelector('.text02').value = a;
+	}
+
+	let dropdown = document.querySelector('.dropdown');
+	dropdown.onclick = function(){
+		dropdown.classList.toggle('active');
+	}
+</script>
+</body>
+</html>

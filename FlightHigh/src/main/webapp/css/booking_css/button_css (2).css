@@ -1,0 +1,17 @@
+.ok{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid rgb(255, 140, 0);
+    background: rgb(255, 123, 0);
+    padding: 12px 34px;
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 84%;
+    text-emphasis-color: #fff;
+    top: 5px;
+    right: 25px;
+    
+}

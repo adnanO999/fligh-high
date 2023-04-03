@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../../images/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.booking_done{
+    width: 300;
+    height: 400;
+    background: rgb(255, 255, 255);
+    color: #000;
+    top: 50%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    opacity: 1;
+    border-radius: 25px;
+    padding: 70px 55px; /*fix it to the center*/
+}
+.booking_done p{ 
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.done{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    opacity: 1;
+    left: calc(50% - 50px); /*placed at the center of the box*/
+}
+.plane{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    opacity: 1;
+}

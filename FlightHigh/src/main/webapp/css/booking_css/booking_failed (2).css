@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../../images/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.booking_failed{
+    width: 300;
+    height: 400;
+    background: rgb(255, 255, 255);
+    color: #000;
+    top: 50%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    opacity: 1;
+    border-radius: 25px;
+    padding: 70px 55px; /*fix it to the center*/
+}
+.booking_failed p{ 
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.rejected{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    opacity: 1;
+}

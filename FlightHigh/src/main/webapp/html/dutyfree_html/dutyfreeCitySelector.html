@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="../../css/hotel_css/citySelector.css">
+<title>City Selector</title>
+</head>
+<body>
+<form action="../../listingDutyfree.jsp" method="post">
+<div class="dropdown">
+<input type="text" name="dutyfreecity" class="text02" readonly placeholder="City Selector">
+<div class="option">
+	<div onmouseover="show('city1')">city1</div>
+	<div onmouseover="show('city2')">city2</div>
+	<div onmouseover="show('city3')">city3</div>
+	<div onmouseover="show('city4')">city4</div>
+	<div onmouseover="show('city5')">city5</div>
+	<div onmouseover="show('city6')">city6</div>
+</div>
+</div>
+		<div class="ok">
+      		<input type="submit" value="submit">
+      	</div>
+</form>
+
+<script>
+	
+	function show(a){
+		document.querySelector('.text02').value = a;
+	}
+
+	let dropdown = document.querySelector('.dropdown');
+	dropdown.onclick = function(){
+		dropdown.classList.toggle('active');
+	}
+</script>
+</body>
+</html>

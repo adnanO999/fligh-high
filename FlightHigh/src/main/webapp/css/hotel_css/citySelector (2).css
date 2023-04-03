@@ -1,0 +1,139 @@
+@charset "ISO-8859-1";
+
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+}
+
+body
+{
+	display:flex;
+	justify-content:center;
+	min-height:100vh;
+	background:linear-gradient(0deg,#ff6c00,#fff);
+}
+
+.dropdown
+{
+	position:relative;
+	margin-top:100px;
+	width:300px;
+	height:50px;
+}
+.dropdown input
+{
+	text-align:center;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+	border-radius:10px;
+	padding: 12px,20px;
+	font-size:20px;
+	background:linear-gradient(0deg,#fff,#ff6c00);
+	box-shadow:0 5px 20px #fa7c1f;
+	outline:none;
+	border:none;
+}
+
+.dropdown::before
+{
+	content:'';
+	position:absolute;
+	top:25px;
+	right:28px;
+	width:12px;
+	height:2px;
+	background:#555;
+	z-index:10;
+	transform:rotate(40deg);
+	transition:0.5s;
+	
+}
+
+.dropdown.active::before
+{
+	right:20px;
+}
+
+.dropdown::after
+{
+	content:'';
+	position:absolute;
+	top:25px;
+	right:20px;
+	width:12px;
+	height:2px;
+	background:#555;
+	z-index:10;
+	transform:rotate(-40deg);
+	transition:0.25s;
+	
+}
+
+.dropdown.active::after{
+	right:28px;
+}
+.dropdown .option{
+	text-align:center;
+	position:absolute;
+	top:70px;
+	width:100%;
+	background:linear-gradient(0deg,#ff6c00,#fff);
+	box-shadow:0 5px 20px #fe853d;
+	border-radius:10px;
+	overflow:hidden;
+	visibility:hidden;
+	opacity:0;
+}
+
+.dropdown.active .option{
+	visibility:visible;
+	opacity:1;
+}
+.dropdown .option div
+{
+	padding:12px 20px;
+	cursor:pointer;
+}
+
+.dropdown .option div:hover{
+	background:#fe853d;
+	color:#fff;
+}
+
+.ok{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background:linear-gradient(0deg,#ff6c00,#fff);
+    
+    padding: 12px 34px;
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 84%;
+    text-emphasis-color: #000000;
+    top: 5px;
+    right: 25px;
+    
+}
+.button {
+ background:none;
+    
+  border:none;
+  border-radius: 25px;
+  color: black;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+ 
+}

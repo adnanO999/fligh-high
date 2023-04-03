@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../../images/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.lostpwbox{
+    width: 450;
+    height: 350;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    opacity: 1;
+    border-radius: 25px;
+    padding: 70px 30px; /*fix it to the center*/
+}
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    opacity: 1;
+    left: calc(50% - 50px); /*placed at the center of the box*/
+}
+h1{ /*place the signup at the center*/
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.lostpwbox p{ /*username and password title*/
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.lostpwbox input{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.lostpwbox input[type="text"], input[type="password"], input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.lostpwbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(255, 123, 0);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.lostpwbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffffff;
+    color: #000; 
+}
+
+
+
+
+
